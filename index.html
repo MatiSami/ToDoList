@@ -1,21 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="pl">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
+    <title>To Do List</title>
+    <meta name="description" content="To Do list" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/styles.css" />
+  </head>
 
-  <title>To Do List</title>
-  <meta name="description" content="To Do list">
-  <meta name="author" content="SitePoint">
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__logo">Logo</div>
+        <div class="nav__title">Twoja osobista TO DO Lista</div>
+        <div class="nav__menu">
+          <ul class="menu-list">
+            <li class="menu-list__element">Zaloguj</li>
+            <li class="menu-list__element">Zarejestruj</li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <main>
+      <!-- sekcja z dodawaniem nowego zadania -->
+      <div class="app-add-block">
+        <div class="app-add-block__title">Co mamy do zrobienia</div>
+        <div class="app-add-block__tools">
+          <div class="tools__add-task">
+            <input type="text" />
+            <p>Ostrzeżenie</p>
+          </div>
+          <div class="tools__add-category">
+            <select id="category">
+              <option value="house">Dom</option>
+              <option value="work">Praca</option>
+              <option value="shooping">Zakupy</option>
+            </select>
+          </div>
+          <button class="add-element">Dodaj zadanie</button>
+        </div>
+      </div>
+      <!-- koniec sekcji z dodawaniem nowego zadania -->
 
-</head>
+      <!-- pojedynczy blok kateogi i jej zadań -->
+      <div class="block-category">
+        <div class="block-category-task category-house">
+          <div class="block-category-task__desc">
+            <div class="block-category-task__title">
+              DOM
+            </div>
+            <div class="block-category-task__info">
+              Wygląda na to, że masz spokojny dzień
+            </div>
+          </div>
+        </div>
 
-<body>
+        <!-- pojedynczy blok kateogi i jej zadań -->
+        <div class="block-category-task category-work">
+          <div class="block-category-task__desc">
+            <div class="block-category-task__title">
+              DOM
+            </div>
+            <div class="block-category-task__info">
+              Wygląda na to, że masz spokojny dzień
+            </div>
+          </div>
+        </div>
 
-    <h1>To DO List</h1>
+        <!-- pojedynczy blok kateogi i jej zadań -->
+        <div class="block-category-task category-shooping">
+          <div class="block-category-task__desc">
+            <div class="block-category-task__title">
+              DOM
+            </div>
+            <div class="block-category-task__info">
+              Wygląda na to, że masz spokojny dzień
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-  <script src="js/scripts.js"></script>
-</body>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

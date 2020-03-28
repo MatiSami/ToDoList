@@ -1,0 +1,55 @@
+/* stylowanie headera */
+
+.header {}   
+
+.nav {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {}
+
+.nav__title {}
+
+.nav__menu {}
+
+.menu-list {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-list__element {}
+
+/* stylowanie sekcji dotyczącej dodawania nowego zadania */
+
+.app-add-block {
+    width: 800px;
+    margin: 0 auto;
+}
+.app-add-block__title{
+    text-align: center;
+}
+.app-add-block__tools{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.tools__add-task{}
+.tools__add-category{}
+.add-element{}
+
+/* stylowanie bloków z zadaniami */
+
+.block-category{
+    display: flex;
+    width: 100%;
+    align-content: space-around;
+}
+.block-category-task{
+    width: 33.3%;
+}
