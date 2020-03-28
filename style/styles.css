@@ -1,6 +1,8 @@
 /* stylowanie headera */
 
-.header {}   
+.header {
+    background: #fff;
+}   
 
 .nav {
     height: 100px;

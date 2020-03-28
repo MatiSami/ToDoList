@@ -5,7 +5,9 @@
     <meta charset="utf-8" />
     <title>To Do List</title>
     <meta name="description" content="To Do list" />
+    
     <link rel="stylesheet" href="style/reset.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/styles.css" />
   </head>
 
@@ -29,7 +31,7 @@
         <div class="app-add-block__title">Co mamy do zrobienia</div>
         <div class="app-add-block__tools">
           <div class="tools__add-task">
-            <input type="text" />
+            <input type="text" id="input-task" />
             <p>Ostrzeżenie</p>
           </div>
           <div class="tools__add-category">
@@ -39,7 +41,7 @@
               <option value="shooping">Zakupy</option>
             </select>
           </div>
-          <button class="add-element">Dodaj zadanie</button>
+          <button id="add-element">Dodaj zadanie</button>
         </div>
       </div>
       <!-- koniec sekcji z dodawaniem nowego zadania -->
@@ -49,11 +51,16 @@
         <div class="block-category-task category-house">
           <div class="block-category-task__desc">
             <div class="block-category-task__title">
-              DOM
+              Dom
             </div>
             <div class="block-category-task__info">
               Wygląda na to, że masz spokojny dzień
             </div>
+          </div>
+          <div class="block-category-task__list">
+            <ul id="house" class="task-list">
+              <!-- dodawanie zadan -->
+            </ul>
           </div>
         </div>
 
@@ -61,11 +68,17 @@
         <div class="block-category-task category-work">
           <div class="block-category-task__desc">
             <div class="block-category-task__title">
-              DOM
+              Praca
             </div>
             <div class="block-category-task__info">
               Wygląda na to, że masz spokojny dzień
             </div>
+          </div>
+          <div class="block-category-task__list">
+            <ul id="work" class="task-list">
+                
+              <!-- dodawanie zadan -->
+            </ul>
           </div>
         </div>
 
@@ -73,11 +86,16 @@
         <div class="block-category-task category-shooping">
           <div class="block-category-task__desc">
             <div class="block-category-task__title">
-              DOM
+              Zakupy
             </div>
             <div class="block-category-task__info">
               Wygląda na to, że masz spokojny dzień
             </div>
+          </div>
+          <div class="block-category-task__list">
+            <ul id="shooping" class="task-list">
+              <!-- dodawanie zadan -->
+            </ul>
           </div>
         </div>
       </div>
