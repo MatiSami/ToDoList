@@ -1,57 +1,159 @@
+/* ogólne */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.main-block {
+  background-color: #3e8080;
+}
+
 /* stylowanie headera */
 
 .header {
-    background: #fff;
-}   
+  background: #fff;
+  padding: 0 40px;
+  border-bottom: 1px solid #000;
+}
 
 .nav {
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav__logo {}
+.nav__logo {
+  cursor: pointer;
+}
 
-.nav__title {}
+.nav__title {
+  font-size: 30px;
+}
 
-.nav__menu {}
+.nav__menu {
+}
 
 .menu-list {
-    width: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.menu-list__element {}
+.menu-list__element {
+  cursor: pointer;
+}
 
 /* stylowanie sekcji dotyczącej dodawania nowego zadania */
 
 .app-add-block {
-    width: 800px;
-    margin: 0 auto;
+  width: 800px;
+  margin: 0 auto;
 }
-.app-add-block__title{
-    text-align: center;
+.app-add-block__title {
+  text-align: center;
+  font-size: 40px;
+  padding: 40px 0;
+  font-weight: 700;
 }
-.app-add-block__tools{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.app-add-block__tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
 }
-.tools__add-task{}
-.tools__add-category{}
-.add-element{}
+.tools__add-task {
+}
+.input-task {
+  width: 400px;
+  padding: 5px 0 5px 10px;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px solid #000;
+}
+.tools__add-category {
+}
+.select-css {
+  width: 100px;
+  height: 54px;
+  padding-left: 15px;
+  border-radius: 15px;
+  border: 2px solid #000;
+}
+#add-element {
+  width: 150px;
+  height: 54px;
+  border-radius: 15px;
+  border: 2px solid #000;
+  background-color: #fff;
+  font-weight: bold;
+}
 
 /* stylowanie bloków z zadaniami */
 
-.block-category{
-    display: flex;
-    width: 100%;
-    align-content: space-around;
+.block-category {
+  display: flex;
+  width: 100%;
+  align-content: space-around;
 }
-.block-category-task{
-    width: 33.3%;
+.block-category-task {
+  width: 33.3%;
+  border: 2px solid #000;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 20px;
+  min-height: 400px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+.block-category-task__title {
+  font-size: 26px;
+  text-align: center;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.category-house {
+  background-color: #64cccc;
+}
+.category-work {
+  background-color: #7dffff;
+}
+.category-shooping {
+  background-color: #c9ffff;
+}
+
+.task-list {
+}
+
+.remove:hover {
+  cursor: pointer;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 15px 20px;
+  -webkit-box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.75);
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.fa-trash:before {
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.input-task--error::-webkit-input-placeholder {
+  color: red;
 }

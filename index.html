@@ -5,9 +5,16 @@
     <meta charset="utf-8" />
     <title>To Do List</title>
     <meta name="description" content="To Do list" />
-    
+
     <link rel="stylesheet" href="style/reset.css" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style/styles.css" />
   </head>
 
@@ -15,7 +22,6 @@
     <header class="header">
       <nav class="nav">
         <div class="nav__logo">Logo</div>
-        <div class="nav__title">Twoja osobista TO DO Lista</div>
         <div class="nav__menu">
           <ul class="menu-list">
             <li class="menu-list__element">Zaloguj</li>
@@ -25,17 +31,22 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main-block">
       <!-- sekcja z dodawaniem nowego zadania -->
       <div class="app-add-block">
         <div class="app-add-block__title">Co mamy do zrobienia</div>
         <div class="app-add-block__tools">
           <div class="tools__add-task">
-            <input type="text" id="input-task" />
-            <p>Ostrzeżenie</p>
+            <input
+              type="text"
+              id="input-task"
+              class="input-task"
+              placeholder="Wpisz zadanie do  wykonania..."
+              maxlength="15"
+            />
           </div>
           <div class="tools__add-category">
-            <select id="category">
+            <select id="category" class="select-css">
               <option value="house">Dom</option>
               <option value="work">Praca</option>
               <option value="shooping">Zakupy</option>
@@ -53,9 +64,6 @@
             <div class="block-category-task__title">
               Dom
             </div>
-            <div class="block-category-task__info">
-              Wygląda na to, że masz spokojny dzień
-            </div>
           </div>
           <div class="block-category-task__list">
             <ul id="house" class="task-list">
@@ -70,13 +78,9 @@
             <div class="block-category-task__title">
               Praca
             </div>
-            <div class="block-category-task__info">
-              Wygląda na to, że masz spokojny dzień
-            </div>
           </div>
           <div class="block-category-task__list">
             <ul id="work" class="task-list">
-                
               <!-- dodawanie zadan -->
             </ul>
           </div>
@@ -87,9 +91,6 @@
           <div class="block-category-task__desc">
             <div class="block-category-task__title">
               Zakupy
-            </div>
-            <div class="block-category-task__info">
-              Wygląda na to, że masz spokojny dzień
             </div>
           </div>
           <div class="block-category-task__list">
