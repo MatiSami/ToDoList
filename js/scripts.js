@@ -23,7 +23,6 @@ button.addEventListener("click", function() {
 
     input.classList.remove("input-task--error");
   } else {
-    console.log(input);
     input.classList.add("input-task--error");
     input.placeholder = "Musisz coś wpisać";
   }
